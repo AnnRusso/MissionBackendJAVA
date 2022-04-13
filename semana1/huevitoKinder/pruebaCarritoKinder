@@ -1,0 +1,24 @@
+package semana1;
+
+public class pruebaCarritoKinder {
+    public static void main(String[] args) {
+        def();
+    }
+
+    public static void def(){
+        carritoKinder carroDeportivo = new carritoKinder();
+
+        carroDeportivo.setRin(20.5);
+        carroDeportivo.setVelocidad(99.9);
+        carroDeportivo.setColor("Naranja");
+
+        String msg = "Soy un auto deportivo con estas caracteristicas: ";
+        msg += "\nColor: "+carroDeportivo.getColor();
+        msg += "\nRin: "+carroDeportivo.getRin();
+        msg += "\nVelocidad: "+carroDeportivo.getVelocidad();
+
+
+        System.out.print(msg);
+    }
+
+}
