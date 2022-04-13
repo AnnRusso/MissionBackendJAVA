@@ -1,0 +1,47 @@
+package semana1;
+
+public class carritoKinder {
+
+
+    //Campos
+    public double rin, velocidad;
+    public String color;
+
+    //Getters
+    public double getVelocidad(){  return velocidad;  }
+    public double getRin(){  return rin;  }
+    public String getColor(){  return color;  }
+
+    //Setters
+    public boolean setRin(double rin){
+        if(rin > 0){
+            this.rin = rin;
+            return true;
+        }else
+            return false;
+    }
+
+    public boolean setVelocidad(double velocidad){
+        if(velocidad > 0){
+            this.velocidad = velocidad;
+            return true;
+        }else
+            return false;
+    }
+
+    public boolean setColor(String color){
+        if(!color.isEmpty()){
+            this.color = color;
+            return true;
+        }else
+            return false;
+    }
+
+    //Metodo de control
+    public String printState(){
+        return "rin: "+rin+"\n"+
+                "velocidad: "+velocidad+"\n"+
+                "color: "+color;
+    }
+
+}
